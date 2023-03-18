@@ -1,5 +1,5 @@
+<%= link_to "Index", customers_index_path %>
 <%= link_to "Alphabetized", customers_alphabetized_path %>
-<%= link_to "Missing Email", customers_missing_email_path %>
 
 <% @customers.each do |customer| %>
   <%= render partial: 'customer', object: customer, locals: {show_link: false} %>
